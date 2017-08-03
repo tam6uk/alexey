@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Барбершоп - Прайс-лист</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+	<header class="main_header">
+		<div class="container flexed">
+			<ul class="main_menu">
+				<li class="link_logo">
+					<a href="index.html">
+						<img src="img/Logo.png" alt="Barbershop" title="Barbershop" width="112" height="25">
+					</a>
+				</li>
+				<li>
+					<a href="#">Информация</a>
+				</li>
+				<li>
+					<a href="#">Новости</a>
+				</li>
+				<li class="selected">
+					<a>Прайс лист</a>
+				</li>
+				<li>
+					<a href="shop.html">Магазин</a>
+				</li>
+				<li>
+					<a href="#">Контакты</a>
+				</li>
+			</ul>
+			<div class="user_block">
+				<a href="#modal_login" class="login">Вход</a>
+			</div>
+		</div>
+	</header>
+
+	<main class="secondary">
+		<div class="container content">
+			<div class="price_page_title">
+				<h1>Прайс-лист</h1>
+				<!-- *Хлебные кроши -->
+				<ul class="breadcrumbs">
+					<li>
+						<a href="#">Главная</a>
+					</li>
+					<li>
+					    <a class="selected">
+						    Прайс-лист					      
+					    </a>
+					</li>
+				</ul>
+			</div>
+			<div class="price_title">
+				<b class="big_heading_flex">Истинно мужская классика</b>
+			</div>
+			<!-- *Средства и Про компанию -->
+			<div class="price_content">
+				<div class="price_content_left">
+					<div class="price_left_tools">
+						<b>
+							Мы используем только<br>лучшие средства:
+						</b>
+						<ul class="lists">
+							<li>
+								Baxter of California
+							</li>
+							<li>
+								Mr Natty
+							</li>
+							<li>
+								Suavecito
+							</li>
+							<li>
+								Malin+Goetz
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- *Таблица Цены на услуги -->
+				<div class="price_content_right">
+					<div class="price_right_services">
+						<b>
+							Цены на услуги <br> наших мастеров:
+						</b>
+						<table class="price_list">
+							<tr>
+								<td>
+									Стрижка
+								</td>
+								<td>
+									1500 р.
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Стрижка бороды
+								</td>
+								<td>
+									500 р.
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Накрутка усов
+								</td>
+								<td>
+									350 р.
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+
+			<div class="price_content">
+				<div class="price_content_left">
+					<div class="price_left_about_us">
+						<b>
+							Несколько слов о нас:
+						</b>
+						<p>
+							Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.
+						</p>
+					</div>
+				</div>
+				<div class="price_content_right">
+					<div class="price_right_info">
+						<p>
+							Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<!-- *Footer -->
+	<footer class="main_footer sec_footer">
+		<div class="container flexed">
+			<section class="footer_left">
+				<p>Барбершоп «Бородинский»<br>
+					Адрес: г. Санкт-Петербург, ул. б. Конюшенная, д. 19/8<br>
+					<a href="#modal_map" class="map_btn">Как нас найти?</a> <br>
+					Телефон: +7 (495) 666-02-66
+				</p>
+			</section>	
+			<section class="footer_middle">
+				<p>Давайте дружить</p>
+				<ul class="">
+					<li>
+						<a href="https://vk.com" class="social_btn sprite_vk_icon" target="_blank">Вконтакте</a>
+					</li>
+					<li>
+						<a href="https://www.facebook.com" class="social_btn sprite_fb_icon" target="_blank">Facebook</a>
+					</li>
+					<li>
+						<a href="https://www.instagram.com" class="social_btn sprite_insta_icon" target="_blank">Инстаграм</a>
+					</li>
+				</ul>
+			</section>
+			<section class="footer_right">
+				<p>Разработано:</p>
+				<a href="https://htmlacademy.ru" class="btn">HTMLACADEMY.RU</a>
+			</section>
+		</div>
+	</footer>
+	<div class="modal_content">
+		<a class="modal_content_close" href="#modal_content_close"> Закрыть</a>
+		<h2 class="modal_content_title">Личный кабинет</h2>
+		<p>Введите пожалуйста свой логин и пароль.</p>
+		<form class="login_form" action="#" method="post">
+			<input class="icon_user user_log" type="text" name="login" placeholder="Логин">
+			<input class="icon_password user_pas" type="password"  name="password" placeholder="Пароль">
+			<label class="login_checkbox">
+				<input type="checkbox" name="remember">
+				<span class="checkbox_indicator"></span>
+				Запомните меня
+			</label>
+			<a class="restore" href="#">Я забыл пароль!</a>
+			<button class="btn" type="submit">Войти</button>
+		</form>
+	</div>
+	<div class="modal_content_map" id="modal_map">
+		<a class="modal_content_close" href="#modal_content_close">Закрыть</a>
+		<iframe src="https://yandex.ru/map-widget/v1/-/CBQkiHaetC"></iframe>
+	</div>
+	<div class="modal_overlay"></div>
+	<script src="js/script.min.js"></script>
+</body>
+</html>

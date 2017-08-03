@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Барбершоп "Бородинский"</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body class="index">
+	<!-- *Меню -->
+	<header class="main_header">
+		<div class="container flexed">
+			<ul  class="main_menu">
+				<li>
+					<a href="#">Информация</a>
+				</li>
+				<li>
+					<a href="#">Новости</a>
+				</li>
+				<li>
+					<a href="price.html">Прайс лист</a>
+				</li>
+				<li>
+					<a href="shop.html">Магазин</a>
+				</li>
+				<li>
+					<a href="#">Контакты</a>
+				</li>
+			</ul>
+			<div class="user_block">
+				<a href="#modal_login
+				" class="login">Вход</a>
+			</div>
+		</div>
+	</header>
+	
+	<main>
+		<div class="container index_content">
+			<div class="main_logo">
+				<img src="img/borodinski-logo.png" alt="Барбершоп «Бородинский»" title="Barbershop" width="368" height="204">
+			</div>
+			<!-- *Особенности -->
+			<div class="features">
+				<div class="features_item">
+					<b>Быстро</b>
+					<p>
+						Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки!
+					</p>
+				</div>
+				<div class="features_item">
+					<b>Круто</b>
+					<p>
+						Забудьте, как вы стриглись раньше.<br>Мы сделаем из вас звезду футбола или кино!<br> Во всяком случае внешне.
+					</p>
+				</div>
+				<div class="features_item">
+					<b>Дорого</b>
+					<p>
+						Наши мастера — профессионалы своего дела и<br>не могут стоить дешево. К тому же, разве цена<br>не дает определений статус?
+					</p>
+				</div>
+			</div>
+			<!-- *-->	
+			<div class="main_content">
+				<!-- *Новости-->	
+				<section class="main_content_left">
+					<h2>Новости</h2>
+					<ul class="news_preview">
+						<li>
+							<a href="#">
+								<p>Нам наконец завезли ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки </p>
+							</a>
+								<time datetime="2017-01-11">11 января</time>
+						</li>
+						<li>
+							<a href="#">
+								<p>В нашей команде пополнение, Борис «Бритва» стригунец, обладатель множества титулов и наград пополнил наши стройные ряды</p>
+							</a>
+								<time datetime="2017-01-18">18 января</time>
+						</li>
+					</ul>
+					<a href="#" class="btn news_btn">Все новости</a>
+				</section>
+				<!-- *Галерея-->	
+				<section class="main_content_right">
+					<h2>Фотогалерея</h2>
+					<div class="gallary">
+						<figure class="main_gallary">
+							<a href="#">
+								<img src="img/gallary1.jpg" alt="Барбершоп «Бородинский»" width="290" height="165">
+							</a>
+						</figure>
+						<div class="content_btn">
+							<button type="button" class="btn" disabled>Назад</button>
+							<button type="button" class="btn">Вперед</button>
+						</div>	
+					</div>
+				</section>
+			</div>
+			<!-- *Контакты-->	
+			<div class="main_content">
+				<section class="main_content_left">
+					<h2>Контактная информация</h2>
+					<p>Барбершоп «Бородинский»<br>
+						Адрес: г. Санкт-Петербург, б. Конюшенная, д. 19/8<br>
+						Телефон: +7 (495) 666-02-66
+					</p>
+					<p>Время работы:<br>
+						Пн — Пт: С 10:00 До 22:00<br>
+						СБ — Вс: C 10:00 До 19:00					
+					</p>
+					<div class="content_btn">
+						<a href="#modal_map" class="btn map_btn">Как проехать</a>
+						<a href="#" class="btn">Обратная связь</a>
+					</div>
+				</section>
+				<!-- *Запись на прием-->	
+				<section class="main_content_right">
+					<h2>Записаться</h2>
+					<p>Укажите желаемую дату и время и мы свяжемся<br> с вами для подтверждения брони</p>
+					<form action="#" class="reservation" method="get">
+						<input type="text" name="Date" value="" placeholder="ДАТА">
+						<input type="text" name="Time" value="" placeholder="ВРЕМЯ">
+						<input type="text" name="User_name" value="" placeholder="ВАШЕ ИМЯ">
+						<input type="text" name="User_number" value="" placeholder="ТЕЛЕФОН">
+						<button class="btn" type="submit">Отправить</button>
+					</form>
+				</section>
+			</div>
+		</div>
+	</main>
+	<!-- *Footer -->	
+	<footer class="main_footer ">
+		<div class="container flexed">
+			<section class="footer_left">
+				<p>Барбершоп «Бородинский»<br>
+					Адрес: г. Санкт-Петербург, ул. б. Конюшенная, д. 19/8<br>
+					<a href="#modal_map" class="map_btn">Как нас найти?</a> <br>
+					Телефон: +7 (495) 666-02-66
+				</p>
+			</section>	
+			<section class="footer_middle">
+				<p>Давайте дружить!</p>
+				<ul class="">
+					<li>
+						<a href="https://vk.com" class="social_btn sprite_vk_icon" target="_blank">Вконтакте</a>
+					</li>
+					<li>
+						<a href="https://www.facebook.com" class="social_btn sprite_fb_icon" target="_blank">Facebook</a>
+					</li>
+					<li>
+						<a href="https://www.instagram.com" class="social_btn sprite_insta_icon" target="_blank">Инстаграм</a>
+					</li>
+				</ul>
+			</section>
+			<section class="footer_right">
+				<p>Разработано:</p>
+				<a href="https://htmlacademy.ru" class="btn">HTMLACADEMY.RU</a>
+			</section>
+		</div>
+	</footer>
+	<div class="modal_content" id="modal_login">
+		<a class="modal_content_close" href="#modal_content_close"> Закрыть</a>
+		<h2 class="modal_content_title">Личный кабинет</h2>
+		<p>Введите пожалуйста свой логин и пароль.</p>
+		<form class="login_form" action="#" method="post">
+			<input class="icon_user user_log" type="text" name="login" placeholder="Логин" >
+			<input class="icon_password user_pas" type="password"  name="password" placeholder="Пароль" >
+			<div class="remember_restore">
+				<label class="login_checkbox">
+					<input type="checkbox" name="remember">
+					<span class="checkbox_indicator"></span>
+					Запомните меня
+				</label>
+				<a class="restore" href="#">Я забыл пароль!</a>
+			</div>
+			<button class="btn" type="submit">Войти</button>
+		</form>
+	</div>
+	<div class="modal_content_map" id="modal_map">
+		<a class="modal_content_close" href="#modal_content_close">Закрыть</a>
+		<iframe src="https://yandex.ru/map-widget/v1/-/CBQkiHaetC"></iframe>
+	</div>
+	<div class="modal_overlay"></div>
+<script src="js/script.min.js"></script>
+</body>
+</html>
